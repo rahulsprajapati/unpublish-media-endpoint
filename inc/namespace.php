@@ -21,6 +21,8 @@ function bootstrap() {
 
 /**
  * Load plugin text domain for text translation.
+ * 
+ * @codeCoverageIgnore
  */
 function load_textdomain() {
 
