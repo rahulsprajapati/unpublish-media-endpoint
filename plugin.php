@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Unpublish Media Endpoint
  * Plugin URI: https://github.com/rahulsprajapati/unpublish-media-endpoint
- * Description: This plugin will enable media endpoint in case of the post it was uploaded from ( set as post parent ) is no longger in publish status, to fix issue of not able to use it in another post REST endpoint as featured image. Core ticket: https://core.trac.wordpress.org/ticket/41445
+ * Description: This plugin will enable media endpoint in case of the post it was uploaded from ( set as post parent ) is no longer in publish status, to fix issue of not able to use it in another post REST endpoint as featured image. Core ticket: https://core.trac.wordpress.org/ticket/41445
  * Author: Rahul Prajapati
  * Version: 1.0.0
  * Author URI: https://github.com/rahulsprajapati
