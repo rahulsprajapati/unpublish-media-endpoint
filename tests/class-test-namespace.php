@@ -19,7 +19,6 @@ class Unpublish_Media_Endpoint extends WP_UnitTestCase {
 	 */
 	public function test_bootstrap() {
 		$this->assertEquals( 10, has_action( 'plugins_loaded', 'Unpublish_Media_Endpoint\\load_textdomain' ) );
-		$this->assertEquals( 10, has_action( 'plugins_loaded', 'Unpublish_Media_Endpoint\\activate_plugin' ) );
 	}
 
 }
