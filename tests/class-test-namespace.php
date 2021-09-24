@@ -2,24 +2,24 @@
 /**
  * Test for Plugin.
  *
- * @package wp-plugin-template
+ * @package unpublish-media-endpoint
  */
 
-namespace WP_Plugin_Template\Tests;
+namespace Unpublish_Media_Endpoint\Tests;
 
 use WP_UnitTestCase;
 
 /**
- * WP_Plugin_Template test case.
+ * Unpublish_Media_Endpoint test case.
  */
-class WP_Plugin_Template extends WP_UnitTestCase {
+class Unpublish_Media_Endpoint extends WP_UnitTestCase {
 	
 	/**
 	 * Test bootstrap.
 	 */
 	public function test_bootstrap() {
-		$this->assertEquals( 10, has_action( 'plugins_loaded', 'WP_Plugin_Template\\load_textdomain' ) );
-		$this->assertEquals( 10, has_action( 'plugins_loaded', 'WP_Plugin_Template\\activate_plugin' ) );
+		$this->assertEquals( 10, has_action( 'plugins_loaded', 'Unpublish_Media_Endpoint\\load_textdomain' ) );
+		$this->assertEquals( 10, has_action( 'plugins_loaded', 'Unpublish_Media_Endpoint\\activate_plugin' ) );
 	}
 
 }

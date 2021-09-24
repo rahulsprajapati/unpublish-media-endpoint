@@ -1,11 +1,11 @@
 <?php
 /**
- * WP_Plugin_Template Namespace.
+ * Unpublish_Media_Endpoint Namespace.
  *
- * @package wp-plugin-template
+ * @package unpublish-media-endpoint
  */
 
-namespace WP_Plugin_Template;
+namespace Unpublish_Media_Endpoint;
 
 /**
  * Hook up all the filters and actions.
@@ -24,7 +24,7 @@ function bootstrap() {
 function load_textdomain() {
 
 	load_plugin_textdomain(
-		'wp-plugin-template',
+		'unpublish-media-endpoint',
 		false,
 		basename( plugin_dir_url( __DIR__ ) ) . '/languages'
 	);
@@ -58,18 +58,18 @@ function activate_plugin() {
 function dependency_admin_notice() {
 	
 	echo '<div class="error"><p>';
-	esc_html_e( 'Plugin can\'t be loaded, It requires following plugins to be installed and activated.', 'wp-plugin-template' );
+	esc_html_e( 'Plugin can\'t be loaded, It requires following plugins to be installed and activated.', 'unpublish-media-endpoint' );
 		echo '<ol>';
 			printf(
 				'<li><a href="https://wordpress.org/plugins/plugin-1" target="_blank">%s</a></li>',
-				esc_html__( 'Plugin 1', 'wp-plugin-template' )
+				esc_html__( 'Plugin 1', 'unpublish-media-endpoint' )
 			);
 			printf(
 				' <li><a href="https://wordpress.org/plugins/plugin-2" target="_blank">%s</a></li>',
-				esc_html__( 'Plugin 2', 'wp-plugin-template' )
+				esc_html__( 'Plugin 2', 'unpublish-media-endpoint' )
 			);
 		echo '</ol>';
-	esc_html_e( 'Please verify the dependency to enable this field type.', 'wp-plugin-template' );
+	esc_html_e( 'Please verify the dependency to enable this field type.', 'unpublish-media-endpoint' );
 	echo '</p></div>';
 }
 
@@ -94,15 +94,15 @@ function admin_enqueue_scripts( $hook ) {
 	}
 
 	wp_enqueue_style(
-		'wp-plugin-template-admin-css',
-		plugin_dir_url( __FILE__ ) . 'assets/css/wp-plugin-template-admin.css',
+		'unpublish-media-endpoint-admin-css',
+		plugin_dir_url( __FILE__ ) . 'assets/css/unpublish-media-endpoint-admin.css',
 		[],
 		VERSION
 	);
 
 	wp_enqueue_script(
-		'wp-plugin-template-admin-js',
-		plugin_dir_url( __FILE__ ) . 'assets/js/wp-plugin-template-admin.js',
+		'unpublish-media-endpoint-admin-js',
+		plugin_dir_url( __FILE__ ) . 'assets/js/unpublish-media-endpoint-admin.js',
 		[
 			'wp-util',
 		],
@@ -119,15 +119,15 @@ function admin_enqueue_scripts( $hook ) {
 function enqueue_scripts( $hook ) {
 
 	wp_enqueue_style(
-		'wp-plugin-template-css',
-		plugin_dir_url( __FILE__ ) . 'assets/css/wp-plugin-template.css',
+		'unpublish-media-endpoint-css',
+		plugin_dir_url( __FILE__ ) . 'assets/css/unpublish-media-endpoint.css',
 		[],
 		VERSION
 	);
 
 	wp_enqueue_script(
-		'wp-plugin-template-js',
-		plugin_dir_url( __FILE__ ) . 'assets/js/wp-plugin-template.js',
+		'unpublish-media-endpoint-js',
+		plugin_dir_url( __FILE__ ) . 'assets/js/unpublish-media-endpoint.js',
 		[
 			'wp-util',
 		],

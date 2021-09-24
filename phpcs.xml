@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="wp-plugin-template">
+<ruleset name="unpublish-media-endpoint">
 	<description>WordPress plugin phpcs rules for Plugin.</description>
 
 	<!-- Check all files in this directory and the directories below it. -->
@@ -27,7 +27,7 @@
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="wp-plugin-template" />
+			<property name="text_domain" type="array" value="unpublish-media-endpoint" />
 		</properties>
 	</rule>
 

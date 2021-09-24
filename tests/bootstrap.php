@@ -2,7 +2,7 @@
 /**
  * PHPUnit bootstrap file
  *
- * @package wp-plugin-template
+ * @package unpublish-media-endpoint
  */
 
 // Require composer dependencies.

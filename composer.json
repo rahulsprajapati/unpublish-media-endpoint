@@ -1,6 +1,6 @@
 {
-  "name": "rahulsprajapati/wp-plugin-template",
-  "description": "wp-plugin-template",
+  "name": "rahulsprajapati/unpublish-media-endpoint",
+  "description": "unpublish-media-endpoint",
   "authors": [
     {
       "name": "Rahul Prajapati",
@@ -11,10 +11,10 @@
   ],
   "type": "wordpress-plugin",
   "prefer-stable": true,
-  "homepage": "https://github.com/rahulsprajapati/wp-plugin-template",
+  "homepage": "https://github.com/rahulsprajapati/unpublish-media-endpoint",
   "support": {
-    "issues": "https://github.com/rahulsprajapati/wp-plugin-template/issues",
-    "source": "https://github.com/rahulsprajapati/wp-plugin-template/"
+    "issues": "https://github.com/rahulsprajapati/unpublish-media-endpoint/issues",
+    "source": "https://github.com/rahulsprajapati/unpublish-media-endpoint/"
   },
   "minimum-stability": "dev",
   "require-dev": {
