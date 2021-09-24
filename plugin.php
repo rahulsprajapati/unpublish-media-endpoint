@@ -17,5 +17,6 @@ namespace Unpublish_Media_Endpoint;
 
 const VERSION = '0.0.1';
 
+require_once __DIR__ . '/inc/class-attachment-controller.php';
 require_once __DIR__ . '/inc/namespace.php';
 bootstrap();
