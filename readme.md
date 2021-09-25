@@ -18,6 +18,6 @@ To reproduce issue:
 
 ![Before](./screenshots/Screenshot-1.png)
 
-Enable this plugin and notice the repose for step 4, you'll see expected media endpoint output:
+Enable this plugin and notice the response for step 4, you'll see expected media endpoint output:
 
 ![After](./screenshots/Screenshot-2.png)
