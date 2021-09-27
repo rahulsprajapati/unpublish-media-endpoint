@@ -57,7 +57,7 @@ class Test_Attachment_Controller extends REST_Controller_Testcase {
 
 		self::$attachment_id_2 = self::factory()->attachment->create();
 
-        register_post_status(
+		register_post_status(
 			'test-publish',
 			[
 				'label'  => 'Test Published',
@@ -72,9 +72,9 @@ class Test_Attachment_Controller extends REST_Controller_Testcase {
      * @return void
      */
     public function test_check_read_permission() {
-        $instance = new Attachment_Controller( 'attachment' );
+		$instance = new Attachment_Controller( 'attachment' );
 
-        $post = get_post( self::$post_id );
+		$post = get_post( self::$post_id );
 
 		$post->post_type = 'invalid';
 		$this->assertFalse( $instance->check_read_permission( $post ) );
@@ -103,7 +103,7 @@ class Test_Attachment_Controller extends REST_Controller_Testcase {
 		$response = rest_ensure_response( $this->server->dispatch( $request ) );
 		$this->assertEquals( 200, $response->get_status() );
 
-        $request = new WP_REST_Request( 'GET', '/wp/v2/media/' . self::$attachment_id_2 );
+		$request = new WP_REST_Request( 'GET', '/wp/v2/media/' . self::$attachment_id_2 );
 		$response = rest_ensure_response( $this->server->dispatch( $request ) );
 		$this->assertEquals( 200, $response->get_status() );
 
