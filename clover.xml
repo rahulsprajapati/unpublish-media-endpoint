@@ -2,7 +2,7 @@
 <coverage generated="1632503913">
   <project timestamp="1632503913">
     <package name="Unpublish_Media_Endpoint">
-      <file name="/var/www/html/wp-content/plugins/unpublish-media-endpoint/inc/class-attachment-controller.php">
+      <file name="/home/runner/work/unpublish-media-endpoint/unpublish-media-endpoint/inc/class-attachment-controller.php">
         <class name="Unpublish_Media_Endpoint\Attachment_Controller" namespace="Unpublish_Media_Endpoint" fullPackage="Attachment">
           <metrics complexity="7" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="12" coveredelements="12"/>
         </class>
@@ -21,7 +21,7 @@
         <metrics loc="58" ncloc="31" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="12" coveredelements="12"/>
       </file>
     </package>
-    <file name="/var/www/html/wp-content/plugins/unpublish-media-endpoint/inc/namespace.php">
+    <file name="/home/runner/work/unpublish-media-endpoint/unpublish-media-endpoint/inc/namespace.php">
       <line num="16" type="stmt" count="1"/>
       <line num="19" type="stmt" count="1"/>
       <line num="46" type="stmt" count="1"/>
