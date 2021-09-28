@@ -34,6 +34,7 @@ jobs:
             - name: SonarCloud Scan
               if: github.event_name == 'pull_request'
               env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
                 PULL_REQUEST_NUMBER: ${{ github.event.number }}
               run: sonar-scanner -X
@@ -47,6 +48,7 @@ jobs:
               if: github.event_name == 'push'
               env:
                 GIT_BRANCH: ${{ env.GIT_BRANCH }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
               run: sonar-scanner -X
                 -D project.settings=sonar-project.properties
