@@ -30,7 +30,6 @@ jobs:
                 wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.5.0.2216-linux.zip
                 unzip sonar-scanner-cli-4.5.0.2216-linux
                 echo "$(pwd)/sonar-scanner-4.5.0.2216-linux/bin" >> $GITHUB_PATH
-                echo "$(pwd)"
 
             - name: SonarCloud Scan
               if: github.event_name == 'pull_request'
