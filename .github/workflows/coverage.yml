@@ -31,7 +31,7 @@ jobs:
                 unzip sonar-scanner-cli-4.5.0.2216-linux
                 echo "$(pwd)/sonar-scanner-4.5.0.2216-linux/bin" >> $GITHUB_PATH
 
-            - name: SonarCloud Scan
+            - name: Pull Request Scan
               if: github.event_name == 'pull_request'
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,7 +44,7 @@ jobs:
                 -D sonar.pullrequest.base=${GITHUB_BASE_REF}
                 -D sonar.login="$SONAR_TOKEN"
 
-            - name: SonarCloud Scan
+            - name: Branch Scan
               if: github.event_name == 'push'
               env:
                 GIT_BRANCH: ${{ env.GIT_BRANCH }}
