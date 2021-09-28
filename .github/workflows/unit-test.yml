@@ -23,6 +23,9 @@ jobs:
                   node-version: 14
                   cache: npm
 
+            - name: Install dependencies
+              uses: php-actions/composer@v6
+
             - name: Npm install and build
               run: |
                   npm install
