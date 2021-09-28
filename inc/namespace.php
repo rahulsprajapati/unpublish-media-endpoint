@@ -43,6 +43,7 @@ function load_textdomain() {
  */
 function filter_attachment_post_type_args( array $args, string $post_type ) : array {
 	
+	// Test coverage
 	if ( $post_type !== 'attachment' ) {
 		return $args;
 	}
